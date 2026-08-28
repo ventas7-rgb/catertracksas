@@ -1,15 +1,16 @@
 @echo off
 setlocal enabledelayedexpansion
+cd /d "%~dp0"
 
 echo.
 echo 🚀 CaterTrack Admin - Iniciando...
 echo.
 
 echo 📡 Iniciando servicio local...
-start /b node scripts\local-service.mjs
+start "CaterTrack local service" /b node scripts\local-service.mjs
 
 echo 🌐 Iniciando servidor web...
-start /b npx serve .
+start "CaterTrack web server" /b npx.cmd --yes serve .
 
 echo.
 echo ✅ Sistema listo.
@@ -22,4 +23,4 @@ echo.
 timeout /t 2 /nobreak
 
 REM Keep the window open
-cmd /k "exit /b 0"
+pause

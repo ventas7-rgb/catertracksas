@@ -4,6 +4,8 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const npxCommand = process.platform === "win32" ? "npx.cmd" : "npx";
+const servePath = process.platform === "win32" ? `"${__dirname}"` : __dirname;
 
 console.log("\n🚀 CaterTrack Admin - Iniciando...\n");
 
@@ -12,14 +14,20 @@ console.log("📡 Iniciando servicio local...");
 const serviceProcess = spawn("node", [path.join(__dirname, "scripts/local-service.mjs")], {
   stdio: "inherit",
   detached: false,
+  cwd: __dirname,
 });
 
 // Start HTTP server with serve
 console.log("🌐 Iniciando servidor web...");
-const serveProcess = spawn("npx", ["serve", __dirname], {
+const serveProcess = spawn(npxCommand, ["--yes", "serve", servePath], {
   stdio: "inherit",
   detached: false,
+  cwd: __dirname,
+  shell: process.platform === "win32",
 });
+
+serviceProcess.on("error", (error) => console.error("Error iniciando el servicio local:", error.message));
+serveProcess.on("error", (error) => console.error("Error iniciando el servidor web:", error.message));
 
 // Wait for server to start, then show instructions
 setTimeout(() => {
