@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{seoTitle}}</title>
+  <meta name="description" content="{{metaDescription}}">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="{{canonical}}">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script type="application/ld+json">{{productSchema}}</script>
+  <script type="application/ld+json">{{breadcrumbSchema}}</script>
+</head>
+<body id="top" data-category="{{categorySlug}}">
+  <a class="skip-link" href="#main-content">Saltar al contenido</a>
+  <header class="header"><div class="container"><nav class="navbar align-items-center" aria-label="Navegación principal">
+    <a class="navbar-brand header__logo" href="../../index.html#top" aria-label="CaterTrack inicio"><img src="../../assets/images/foot.png" alt="CaterTrack logo" class="header__logo-image"></a>
+    <a class="nav-link" href="../index.html">{{categoryName}}</a>
+  </nav></div></header>
+  <main id="main-content"><section class="catalog-products"><div class="container">
+    <nav aria-label="Ruta de navegación"><a href="../../index.html">Inicio</a> / <a href="../index.html">{{categoryName}}</a> / {{name}}</nav>
+    <article class="product-card">
+      <div class="product-card__visual"><img src="{{image}}" alt="{{alt}}" width="1200" height="900"></div>
+      <div class="product-card__content"><span class="catalog-hero__eyebrow">{{categoryName}} · {{subcategory}}</span><h1>{{name}}</h1>
+        <p class="product-card__description">{{description}}</p>
+        <dl class="product-card__details"><div><dt>Referencia</dt><dd>{{reference}}</dd></div><div><dt>Marca</dt><dd>{{brand}}</dd></div><div><dt>Aplicación</dt><dd>{{application}}</dd></div></dl>
+        <a class="product-card__cta" href="https://wa.me/573132416739?text=Hola%20CaterTrack%2C%20quiero%20cotizar%20{{whatsappName}}" target="_blank" rel="noopener noreferrer">Solicitar cotización <span aria-hidden="true">→</span></a>
+      </div>
+    </article>
+    {{relatedProducts}}
+  </div></section></main>
+  <footer class="footer"><div class="container"><p>Especialistas en repuestos para maquinaria pesada, con soluciones rápidas y asesoría técnica especializada.</p><p>© 2026 CaterTrack. Todos los derechos reservados.</p></div></footer>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "catertrack-catalog",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-catalog.mjs",
+    "validate": "node scripts/build-catalog.mjs --validate",
+    "dev": "node start-admin.js"
+  }
+}
