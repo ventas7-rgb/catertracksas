@@ -1,10 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector(".header");
   const backToTop = document.querySelector(".back-to-top");
-  header
-    ?.querySelector('.header__menu a[href*="#inicio"]')
-    ?.closest("li")
-    ?.remove();
   const categories = [
     ["tren-de-rodaje", "Tren de rodaje"],
     ["repuestos-ipd", "Motor IPD"],
