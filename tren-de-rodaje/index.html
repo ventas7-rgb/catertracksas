@@ -124,6 +124,17 @@
     </header>
 
     <main id="main-content" aria-label="Catálogo de tren de rodaje">
+      <!-- ==============================================================
+           CABECERA DE CATEGORÍA
+           Edita el título, descripción y número de productos aquí.
+      =============================================================== -->
+      <section class="category-hero">
+        <div class="container category-hero__content">
+          <span class="category-hero__meta">CATÁLOGO DE REPUESTOS</span>
+          <h1>Repuestos para tren de rodaje</h1>
+          <p>Encuentra componentes para excavadoras y tractores de orugas. Revisa la disponibilidad y solicita una cotización con la referencia de tu equipo.</p>
+        </div>
+      </section>
       <section class="catalog-products" aria-labelledby="products-title">
         <div class="container">
           <div class="catalog-section-heading">
@@ -131,7 +142,7 @@
               <span class="catalog-hero__eyebrow">Explora por componente</span>
               <h2 id="products-title">Encuentra el repuesto que necesitas</h2>
             </div>
-            <span class="catalog-result" aria-live="polite"></span>
+            <span class="catalog-result" aria-live="polite">7 productos</span>
           </div>
           <div
             class="subcategory-filters"
@@ -195,6 +206,8 @@
               </a>
               <div class="product-card__content">
                 <span class="product-card__category">Cadenas</span>
+                <!-- DISPONIBILIDAD: cambia únicamente el número dentro de <strong>. -->
+                <span class="product-card__availability">Disponibilidad: <strong>0</strong></span>
                 <h3>Cadena de oruga para excavadora</h3>
                 <dl class="product-card__details">
                   <div>
@@ -225,6 +238,8 @@
               </a>
               <div class="product-card__content">
                 <span class="product-card__category">Rodillos</span>
+                <!-- DISPONIBILIDAD: cambia únicamente el número dentro de <strong>. -->
+                <span class="product-card__availability">Disponibilidad: <strong>0</strong></span>
                 <h3>Rodillo inferior de tren de rodaje</h3>
                 <dl class="product-card__details">
                   <div>
@@ -255,6 +270,8 @@
               </a>
               <div class="product-card__content">
                 <span class="product-card__category">Sprockets</span>
+                <!-- DISPONIBILIDAD: cambia únicamente el número dentro de <strong>. -->
+                <span class="product-card__availability">Disponibilidad: <strong>0</strong></span>
                 <h3>Sprocket para mando final</h3>
                 <dl class="product-card__details">
                   <div>
@@ -277,6 +294,64 @@
                   >Solicitar cotización
                   <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
                 ></a>
+              </div>
+            </article>
+            <!-- ==========================================================
+                 TARJETA DE PRODUCTO
+                 Para crear otra tarjeta, duplica un <article> completo.
+                 La ruta href debe coincidir con la carpeta del producto:
+                 producto-ejemplo/ enlaza a producto-ejemplo/index.html.
+            =========================================================== -->
+            <article class="product-card" data-subcategory="segmentos">
+              <a href="segmento-oruga-prueba/" class="product-card__visual" aria-label="Ver segmento de oruga prueba">
+                <img src="../assets/images/products/placeholder.svg" alt="Segmento de oruga de prueba" width="1200" height="900" loading="lazy" decoding="async">
+              </a>
+              <div class="product-card__content">
+                <span class="product-card__category">Segmentos</span>
+                <span class="product-card__availability">Disponibilidad: <strong>0</strong></span>
+                <h3>Segmento de oruga prueba</h3>
+                <dl class="product-card__details"><div><dt>Marca</dt><dd>Marca prueba</dd></div><div><dt>Aplicación</dt><dd>Modelo prueba</dd></div></dl>
+                <p class="product-card__description">Segmento de oruga de prueba para editar manualmente la información, fotografía, referencia y aplicación.</p>
+                <a class="product-card__cta" href="segmento-oruga-prueba/">Ver ficha del producto <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+            <article class="product-card" data-subcategory="ruedas-guia">
+              <a href="rueda-guia-prueba/" class="product-card__visual" aria-label="Ver rueda guía prueba">
+                <img src="../assets/images/products/placeholder.svg" alt="Rueda guía de prueba" width="1200" height="900" loading="lazy" decoding="async">
+              </a>
+              <div class="product-card__content">
+                <span class="product-card__category">Ruedas guía</span>
+                <span class="product-card__availability">Disponibilidad: <strong>0</strong></span>
+                <h3>Rueda guía prueba</h3>
+                <dl class="product-card__details"><div><dt>Marca</dt><dd>Marca prueba</dd></div><div><dt>Aplicación</dt><dd>Modelo prueba</dd></div></dl>
+                <p class="product-card__description">Rueda guía de prueba con contenido de ejemplo para reemplazar por la información de tu inventario.</p>
+                <a class="product-card__cta" href="rueda-guia-prueba/">Ver ficha del producto <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+            <article class="product-card" data-subcategory="rodillos">
+              <a href="rodillo-superior-prueba/" class="product-card__visual" aria-label="Ver rodillo superior prueba">
+                <img src="../assets/images/products/placeholder.svg" alt="Rodillo superior de prueba" width="1200" height="900" loading="lazy" decoding="async">
+              </a>
+              <div class="product-card__content">
+                <span class="product-card__category">Rodillos</span>
+                <span class="product-card__availability">Disponibilidad: <strong>0</strong></span>
+                <h3>Rodillo superior prueba</h3>
+                <dl class="product-card__details"><div><dt>Marca</dt><dd>Marca prueba</dd></div><div><dt>Aplicación</dt><dd>Modelo prueba</dd></div></dl>
+                <p class="product-card__description">Rodillo superior de prueba. Mantén esta tarjeta enlazada con la carpeta de la ficha individual.</p>
+                <a class="product-card__cta" href="rodillo-superior-prueba/">Ver ficha del producto <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+            <article class="product-card" data-subcategory="cadenas">
+              <a href="eslabon-oruga-prueba/" class="product-card__visual" aria-label="Ver eslabón de oruga prueba">
+                <img src="../assets/images/products/placeholder.svg" alt="Eslabón de oruga de prueba" width="1200" height="900" loading="lazy" decoding="async">
+              </a>
+              <div class="product-card__content">
+                <span class="product-card__category">Cadenas</span>
+                <span class="product-card__availability">Disponibilidad: <strong>0</strong></span>
+                <h3>Eslabón de oruga prueba</h3>
+                <dl class="product-card__details"><div><dt>Marca</dt><dd>Marca prueba</dd></div><div><dt>Aplicación</dt><dd>Modelo prueba</dd></div></dl>
+                <p class="product-card__description">Eslabón de oruga de prueba para conservar como guía al crear tarjetas adicionales manualmente.</p>
+                <a class="product-card__cta" href="eslabon-oruga-prueba/">Ver ficha del producto <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
               </div>
             </article>
           </div>
