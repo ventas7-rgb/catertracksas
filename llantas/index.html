@@ -97,11 +97,166 @@
         </nav>
       </div>
     </header>
-    <main
-      id="main-content"
-      data-category="llantas"
-      aria-label="Catálogo de llantas"
-    ></main>
+    <main id="main-content" aria-label="Catálogo de llantas">
+      <section class="catalog-products" aria-labelledby="products-title">
+        <div class="container">
+          <div class="catalog-section-heading">
+            <div>
+              <span class="catalog-hero__eyebrow">Explora por componente</span>
+              <h2 id="products-title">Encuentra el repuesto que necesitas</h2>
+            </div>
+            <span class="catalog-result" aria-live="polite">3 productos</span>
+          </div>
+          <div
+            class="subcategory-filters"
+            role="group"
+            aria-label="Filtrar por subcategoría"
+          >
+            <button
+              class="subcategory-filter is-active"
+              type="button"
+              data-subcategory="all"
+            >
+              Todos
+            </button>
+            <button
+              class="subcategory-filter"
+              type="button"
+              data-subcategory="llantas"
+            >
+              Llantas
+            </button>
+            <button
+              class="subcategory-filter"
+              type="button"
+              data-subcategory="neumaticos"
+            >
+              Neumáticos
+            </button>
+            <button
+              class="subcategory-filter"
+              type="button"
+              data-subcategory="camaras"
+            >
+              Cámaras
+            </button>
+          </div>
+          <div class="product-grid">
+            <article class="product-card" data-subcategory="llantas">
+              <a
+                href="llanta-cargador/"
+                class="product-card__visual"
+                aria-label="Ver llanta para cargador"
+                ><img
+                  src="../assets/images/products/placeholder.svg"
+                  alt="Llanta para cargador"
+                  width="1200"
+                  height="900"
+                  loading="lazy"
+              /></a>
+              <div class="product-card__content">
+                <span class="product-card__category">Llantas</span
+                ><span class="product-card__availability"
+                  >Disponibilidad: <strong>0</strong></span
+                >
+                <h3>Llanta para cargador</h3>
+                <dl class="product-card__details">
+                  <div>
+                    <dt>Marca</dt>
+                    <dd>Por confirmar</dd>
+                  </div>
+                  <div>
+                    <dt>Aplicación</dt>
+                    <dd>Por confirmar</dd>
+                  </div>
+                </dl>
+                <p class="product-card__description">
+                  Llanta para cargador y maquinaria pesada, diseñada para soportar carga, terrenos exigentes y operación continua.
+                </p>
+                <a class="product-card__cta" href="llanta-cargador/"
+                  >Ver ficha
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+                ></a>
+              </div>
+            </article>
+            <article class="product-card" data-subcategory="neumaticos">
+              <a
+                href="neumatico-otr/"
+                class="product-card__visual"
+                aria-label="Ver neumático otr"
+                ><img
+                  src="../assets/images/products/placeholder.svg"
+                  alt="Neumático OTR para maquinaria pesada"
+                  width="1200"
+                  height="900"
+                  loading="lazy"
+              /></a>
+              <div class="product-card__content">
+                <span class="product-card__category">Neumáticos</span
+                ><span class="product-card__availability"
+                  >Disponibilidad: <strong>0</strong></span
+                >
+                <h3>Neumático OTR</h3>
+                <dl class="product-card__details">
+                  <div>
+                    <dt>Marca</dt>
+                    <dd>Por confirmar</dd>
+                  </div>
+                  <div>
+                    <dt>Aplicación</dt>
+                    <dd>Por confirmar</dd>
+                  </div>
+                </dl>
+                <p class="product-card__description">
+                  Neumático OTR para maquinaria pesada, recomendado para equipos que trabajan en construcción, minería y terrenos difíciles.
+                </p>
+                <a class="product-card__cta" href="neumatico-otr/"
+                  >Ver ficha
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+                ></a>
+              </div>
+            </article>
+            <article class="product-card" data-subcategory="camaras">
+              <a
+                href="camara-maquinaria/"
+                class="product-card__visual"
+                aria-label="Ver cámara para maquinaria"
+                ><img
+                  src="../assets/images/products/placeholder.svg"
+                  alt="Cámara para llanta de maquinaria pesada"
+                  width="1200"
+                  height="900"
+                  loading="lazy"
+              /></a>
+              <div class="product-card__content">
+                <span class="product-card__category">Cámaras</span
+                ><span class="product-card__availability"
+                  >Disponibilidad: <strong>0</strong></span
+                >
+                <h3>Cámara para maquinaria</h3>
+                <dl class="product-card__details">
+                  <div>
+                    <dt>Marca</dt>
+                    <dd>Por confirmar</dd>
+                  </div>
+                  <div>
+                    <dt>Aplicación</dt>
+                    <dd>Por confirmar</dd>
+                  </div>
+                </dl>
+                <p class="product-card__description">
+                  Cámara para llanta de maquinaria pesada, repuesto para mantener la presión y el funcionamiento seguro del neumático.
+                </p>
+                <a class="product-card__cta" href="camara-maquinaria/"
+                  >Ver ficha
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+                ></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="footer" id="footer">
       <div class="container">
         <div class="row footer-content">

@@ -97,11 +97,166 @@
         </nav>
       </div>
     </header>
-    <main
-      id="main-content"
-      data-category="ajuste"
-      aria-label="Catálogo de ajuste"
-    ></main>
+    <main id="main-content" aria-label="Catálogo de ajuste">
+      <section class="catalog-products" aria-labelledby="products-title">
+        <div class="container">
+          <div class="catalog-section-heading">
+            <div>
+              <span class="catalog-hero__eyebrow">Explora por componente</span>
+              <h2 id="products-title">Encuentra el repuesto que necesitas</h2>
+            </div>
+            <span class="catalog-result" aria-live="polite">3 productos</span>
+          </div>
+          <div
+            class="subcategory-filters"
+            role="group"
+            aria-label="Filtrar por subcategoría"
+          >
+            <button
+              class="subcategory-filter is-active"
+              type="button"
+              data-subcategory="all"
+            >
+              Todos
+            </button>
+            <button
+              class="subcategory-filter"
+              type="button"
+              data-subcategory="tornillos"
+            >
+              Tornillos
+            </button>
+            <button
+              class="subcategory-filter"
+              type="button"
+              data-subcategory="bujes"
+            >
+              Bujes
+            </button>
+            <button
+              class="subcategory-filter"
+              type="button"
+              data-subcategory="pasadores"
+            >
+              Pasadores
+            </button>
+          </div>
+          <div class="product-grid">
+            <article class="product-card" data-subcategory="tornillos">
+              <a
+                href="kit-tornillos/"
+                class="product-card__visual"
+                aria-label="Ver kit de tornillos"
+                ><img
+                  src="../assets/images/products/placeholder.svg"
+                  alt="Kit de tornillos para maquinaria pesada"
+                  width="1200"
+                  height="900"
+                  loading="lazy"
+              /></a>
+              <div class="product-card__content">
+                <span class="product-card__category">Tornillos</span
+                ><span class="product-card__availability"
+                  >Disponibilidad: <strong>0</strong></span
+                >
+                <h3>Kit de tornillos</h3>
+                <dl class="product-card__details">
+                  <div>
+                    <dt>Marca</dt>
+                    <dd>Por confirmar</dd>
+                  </div>
+                  <div>
+                    <dt>Aplicación</dt>
+                    <dd>Por confirmar</dd>
+                  </div>
+                </dl>
+                <p class="product-card__description">
+                  Kit de tornillos para maquinaria pesada, solución para montaje y mantenimiento de componentes sometidos a trabajo exigente.
+                </p>
+                <a class="product-card__cta" href="kit-tornillos/"
+                  >Ver ficha
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+                ></a>
+              </div>
+            </article>
+            <article class="product-card" data-subcategory="bujes">
+              <a
+                href="bujes-desgaste/"
+                class="product-card__visual"
+                aria-label="Ver bujes de desgaste"
+                ><img
+                  src="../assets/images/products/placeholder.svg"
+                  alt="Bujes de desgaste para maquinaria pesada"
+                  width="1200"
+                  height="900"
+                  loading="lazy"
+              /></a>
+              <div class="product-card__content">
+                <span class="product-card__category">Bujes</span
+                ><span class="product-card__availability"
+                  >Disponibilidad: <strong>0</strong></span
+                >
+                <h3>Bujes de desgaste</h3>
+                <dl class="product-card__details">
+                  <div>
+                    <dt>Marca</dt>
+                    <dd>Por confirmar</dd>
+                  </div>
+                  <div>
+                    <dt>Aplicación</dt>
+                    <dd>Por confirmar</dd>
+                  </div>
+                </dl>
+                <p class="product-card__description">
+                  Bujes de desgaste para maquinaria pesada, repuestos para reducir la fricción y proteger articulaciones y puntos de giro.
+                </p>
+                <a class="product-card__cta" href="bujes-desgaste/"
+                  >Ver ficha
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+                ></a>
+              </div>
+            </article>
+            <article class="product-card" data-subcategory="pasadores">
+              <a
+                href="pasadores-maquinaria/"
+                class="product-card__visual"
+                aria-label="Ver pasadores de maquinaria"
+                ><img
+                  src="../assets/images/products/placeholder.svg"
+                  alt="Pasadores para maquinaria pesada"
+                  width="1200"
+                  height="900"
+                  loading="lazy"
+              /></a>
+              <div class="product-card__content">
+                <span class="product-card__category">Pasadores</span
+                ><span class="product-card__availability"
+                  >Disponibilidad: <strong>0</strong></span
+                >
+                <h3>Pasadores de maquinaria</h3>
+                <dl class="product-card__details">
+                  <div>
+                    <dt>Marca</dt>
+                    <dd>Por confirmar</dd>
+                  </div>
+                  <div>
+                    <dt>Aplicación</dt>
+                    <dd>Por confirmar</dd>
+                  </div>
+                </dl>
+                <p class="product-card__description">
+                  Pasadores para maquinaria pesada, piezas de reemplazo para uniones, brazos, cucharones y componentes articulados.
+                </p>
+                <a class="product-card__cta" href="pasadores-maquinaria/"
+                  >Ver ficha
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+                ></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="footer" id="footer">
       <div class="container">
         <div class="row footer-content">

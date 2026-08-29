@@ -58,7 +58,8 @@ document.addEventListener("DOMContentLoaded", () => {
     filterProducts("all");
   }
 
-  if (header && !document.querySelector(".catalog-navigation")) {
+  // Skip category nav bar on the homepage, which shows its own category grid.
+  if (header && !document.querySelector(".catalog-navigation") && !document.querySelector(".category-grid")) {
     const pageCategory = document.body.dataset.category || "";
     const categoryNavigation = document.createElement("nav");
     categoryNavigation.className = "catalog-navigation";

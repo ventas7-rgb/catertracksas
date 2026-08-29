@@ -97,11 +97,166 @@
         </nav>
       </div>
     </header>
-    <main
-      id="main-content"
-      data-category="tren-de-fuerza"
-      aria-label="Catálogo de tren de fuerza"
-    ></main>
+    <main id="main-content" aria-label="Catálogo de tren de fuerza">
+      <section class="catalog-products" aria-labelledby="products-title">
+        <div class="container">
+          <div class="catalog-section-heading">
+            <div>
+              <span class="catalog-hero__eyebrow">Explora por componente</span>
+              <h2 id="products-title">Encuentra el repuesto que necesitas</h2>
+            </div>
+            <span class="catalog-result" aria-live="polite">3 productos</span>
+          </div>
+          <div
+            class="subcategory-filters"
+            role="group"
+            aria-label="Filtrar por subcategoría"
+          >
+            <button
+              class="subcategory-filter is-active"
+              type="button"
+              data-subcategory="all"
+            >
+              Todos
+            </button>
+            <button
+              class="subcategory-filter"
+              type="button"
+              data-subcategory="transmision"
+            >
+              Transmisión
+            </button>
+            <button
+              class="subcategory-filter"
+              type="button"
+              data-subcategory="convertidores"
+            >
+              Convertidores
+            </button>
+            <button
+              class="subcategory-filter"
+              type="button"
+              data-subcategory="mando-final"
+            >
+              Mando final
+            </button>
+          </div>
+          <div class="product-grid">
+            <article class="product-card" data-subcategory="transmision">
+              <a
+                href="discos-transmision/"
+                class="product-card__visual"
+                aria-label="Ver discos de transmisión"
+                ><img
+                  src="../assets/images/products/placeholder.svg"
+                  alt="Discos de transmisión para maquinaria pesada"
+                  width="1200"
+                  height="900"
+                  loading="lazy"
+              /></a>
+              <div class="product-card__content">
+                <span class="product-card__category">Transmisión</span
+                ><span class="product-card__availability"
+                  >Disponibilidad: <strong>0</strong></span
+                >
+                <h3>Discos de transmisión</h3>
+                <dl class="product-card__details">
+                  <div>
+                    <dt>Marca</dt>
+                    <dd>Por confirmar</dd>
+                  </div>
+                  <div>
+                    <dt>Aplicación</dt>
+                    <dd>Por confirmar</dd>
+                  </div>
+                </dl>
+                <p class="product-card__description">
+                  Discos de transmisión para maquinaria pesada, repuestos para el sistema de transmisión y aplicaciones de trabajo exigente.
+                </p>
+                <a class="product-card__cta" href="discos-transmision/"
+                  >Ver ficha
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+                ></a>
+              </div>
+            </article>
+            <article class="product-card" data-subcategory="convertidores">
+              <a
+                href="convertidor-torque/"
+                class="product-card__visual"
+                aria-label="Ver convertidor de torque"
+                ><img
+                  src="../assets/images/products/placeholder.svg"
+                  alt="Convertidor de torque para maquinaria pesada"
+                  width="1200"
+                  height="900"
+                  loading="lazy"
+              /></a>
+              <div class="product-card__content">
+                <span class="product-card__category">Convertidores</span
+                ><span class="product-card__availability"
+                  >Disponibilidad: <strong>0</strong></span
+                >
+                <h3>Convertidor de torque</h3>
+                <dl class="product-card__details">
+                  <div>
+                    <dt>Marca</dt>
+                    <dd>Por confirmar</dd>
+                  </div>
+                  <div>
+                    <dt>Aplicación</dt>
+                    <dd>Por confirmar</dd>
+                  </div>
+                </dl>
+                <p class="product-card__description">
+                  Convertidor de torque para maquinaria pesada, componente del tren de fuerza que transmite potencia de forma eficiente.
+                </p>
+                <a class="product-card__cta" href="convertidor-torque/"
+                  >Ver ficha
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+                ></a>
+              </div>
+            </article>
+            <article class="product-card" data-subcategory="mando-final">
+              <a
+                href="engranajes-mando-final/"
+                class="product-card__visual"
+                aria-label="Ver engranajes de mando final"
+                ><img
+                  src="../assets/images/products/placeholder.svg"
+                  alt="Engranajes de mando final"
+                  width="1200"
+                  height="900"
+                  loading="lazy"
+              /></a>
+              <div class="product-card__content">
+                <span class="product-card__category">Mando final</span
+                ><span class="product-card__availability"
+                  >Disponibilidad: <strong>0</strong></span
+                >
+                <h3>Engranajes de mando final</h3>
+                <dl class="product-card__details">
+                  <div>
+                    <dt>Marca</dt>
+                    <dd>Por confirmar</dd>
+                  </div>
+                  <div>
+                    <dt>Aplicación</dt>
+                    <dd>Por confirmar</dd>
+                  </div>
+                </dl>
+                <p class="product-card__description">
+                  Engranajes de mando final para maquinaria pesada, repuestos para transmitir fuerza a las orugas y ruedas motrices.
+                </p>
+                <a class="product-card__cta" href="engranajes-mando-final/"
+                  >Ver ficha
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+                ></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="footer" id="footer">
       <div class="container">
         <div class="row footer-content">
